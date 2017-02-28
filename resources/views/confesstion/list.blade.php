@@ -8,6 +8,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Content</th>
+                <th>Created At</th>
                 @if(Auth::user()->email == 'mr.nttung@gmail.com')
                     <th>IP</th>
                     <th>Agent</th>
@@ -33,6 +34,7 @@
                     <td scope="row">{{ $confession->id }}</td>
                     <td>{{ $confession->name }}</td>
                     <td>{{ $confession->content }}</td>
+                    <td>{{ $confession->created_at }}</td>
                     @if(Auth::user()->email == 'mr.nttung@gmail.com')
                         <td>{{ $confession->ip }}</td>
                         <td>{{ $confession->agent }}</td>
