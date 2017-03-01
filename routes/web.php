@@ -18,3 +18,7 @@ Auth::routes();
 Route::get('list', 'ListController@index');
 Route::get('list/{id}/send', 'ListController@send');
 Route::get('list/{id}/delete', 'ListController@delete');
+Route::resource('user', 'UserController');
+Route::get('user/{id}/status', 'UserController@status');
+Route::get('user/{id}/change-password', 'UserController@changePassword');
+Route::post('user/{id}/change-password', 'UserController@savePassword');

@@ -1,5 +1,6 @@
 @if ($admin)
 NEW Confession wait for approve
+{{ action('ListController@index') }}
 @else
 TO ALL >>>
 @endif

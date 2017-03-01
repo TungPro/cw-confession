@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Tùng Pro',
             'email' => 'mr.nttung@gmail.com',
             'password' => bcrypt('123456'),
+            'active' => true,
         ]);
     }
 }
