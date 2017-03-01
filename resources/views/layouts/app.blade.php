@@ -25,7 +25,7 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="banner">
-                    <img src="div2.jpg" width="100%">
+                    <img src="/div2.jpg" width="100%">
                 </div>
                 <div class="navbar-header">
 
@@ -39,7 +39,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="div2-icon.png" height="30" style="display: inline"> {{ config('app.name', 'DIV 2 Confession') }}
+                        <img src="/div2-icon.png" height="30" style="display: inline"> {{ config('app.name', 'DIV 2 Confession') }}
                     </a>
                 </div>
 
@@ -63,6 +63,11 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ action('UserController@changePassword', [Auth::id()]) }}">
+                                            <span class="glyphicon glyphicon-lock"></span>Change password
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
