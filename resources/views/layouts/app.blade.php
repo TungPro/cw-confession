@@ -39,7 +39,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'DIV 2 Confession') }}
+                        <img src="div2-icon.png" height="30" style="display: inline"> {{ config('app.name', 'DIV 2 Confession') }}
                     </a>
                 </div>
 
