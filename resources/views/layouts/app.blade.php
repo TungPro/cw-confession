@@ -24,6 +24,9 @@
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
+                <div class="banner">
+                    <img src="div2.jpg" width="100%">
+                </div>
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
