@@ -3,7 +3,7 @@
 @section('content')
 {!! Form::open(['action' => 'ConfessionController@store']) !!}
     <div class="form-group">
-        <label for="exampleTextarea">Tên bạn</label>
+        <label for="exampleTextarea">Tên bạn (Hem cần nhập cũng được :3)</label>
         {!! Form::text('name', null, ['class' => 'form-control']) !!}
     </div>
     <div class="form-group">
