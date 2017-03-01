@@ -45,6 +45,7 @@ class UserController extends Controller
         $user = new User();
         $user->fill($request->input());
         $user->password = bcrypt($user->password);
+        $user->active = true;
         if ($user->save()) {
             return redirect()->action('UserController@index')->with('message', 'Tạo tài khoản thành công!');
         }
